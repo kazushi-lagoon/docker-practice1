@@ -7,10 +7,12 @@ RUN gem install rails
 RUN mkdir /app
 WORKDIR /app
 # COPY  /rails-tutorial2 /app
+COPY  . /app
 
-COPY Gemfile /app
-COPY Gemfile.lock /app
+
+# COPY Gemfile /app
+# COPY Gemfile.lock /app
 RUN  bundle install
-ADD . /app
+# ADD . /app
 
-CMD ["bundle","install"]
+# CMD ["bundle","install"]
