@@ -63,3 +63,7 @@ gem 'bootstrap-sass', '3.3.7'
 
 gem 'jquery-rails'
 # gem 'sqlite3', '~> 1.3.0'
+
+group :production do
+  gem 'fog', '1.42'
+end
