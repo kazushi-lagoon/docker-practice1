@@ -28,4 +28,4 @@ services:
       - "POSTGRES_USER=postgres"
       - "POSTGRES_PASSWORD=mysecretpassword1234"
     volumes:
-      - /tmp/postgresql-data
+      - /tmp/postgresql-data:/var/lib/postgresql/data
